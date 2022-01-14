@@ -1,0 +1,933 @@
+
+/*GENERAL*/
+
+/*application du txt sur tout le body*/
+body
+{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+}
+
+/*Marges sur tout le bloc-page et pas sur le footer*/
+#bloc-page
+{
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/*supprimer toutes les puces*/
+ul
+{
+    list-style-type: none;
+}
+
+/*définir fond+contour de toutes les "sections"*/
+section
+{
+    background-color: #F2F2F2;
+    border-radius : 10px;
+    padding: 10px 30px 30px 30px;
+}
+
+
+
+/*EN-TETE*/
+
+/*placements + marges de HEBERG & ACTIV*/
+.nav-liens
+{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+}
+
+.nav-liens li a
+{
+    text-decoration: none;
+    color: black;
+}
+
+
+
+
+/*Partie HEADER*/
+#navigation
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo
+{
+    height: 50px;
+    padding-top: 20px;
+}
+
+
+
+/*BARRE DE RECHERCHE*/
+
+form input
+{
+    font-family: 'Raleway', sans-serif;
+    border: 1px solid #F2F2F2;
+    font-weight: bold;
+    font-size: 14px;
+    width: 170px;
+}
+
+.recherche-boite
+{
+    display: flex;
+    margin-top: 25px;
+    height: 50px;
+}
+
+.recherche-titre
+{
+    margin-bottom: 5px;
+}
+
+.placeholder
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.bouton-recherche
+{
+    background-color: #0065FC;
+    color: white;
+    font-size: 14px;
+    width: 110px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 15px 15px;
+    border-bottom-right-radius: 15px 15px;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    border: 0;
+    cursor: pointer;
+}
+
+.bouton-recherche-mob
+{
+    background-color: #0065FC;
+    color: white;
+    font-size: 20px;
+    width: 50px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px 15px 15px 15px;
+    font-family: 'Raleway', sans-serif;
+    margin-left: -20px;
+    border: 0;
+    cursor: pointer;
+}
+
+#icone-recherche
+{
+    background-color: #F2F2F2;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    border-top-left-radius: 15px 15px;
+    border-bottom-left-radius: 15px 15px;
+}
+
+/*FILTRES*/
+
+/*Action sur les icones de filtre : ici forme du cercle*/
+.icones-filter
+{
+    color: #0065FC;
+    background-color: #deebff;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    border: 1px solid #deebff;
+    text-align: center;
+}
+
+/*action sur les icones "filtres"*/
+.icones-filter i
+{
+    margin-top: 7px;
+}
+
+
+/*partie FILTRES*/
+#filtres
+{
+    display: flex;
+}
+
+#filtres p
+{
+    margin-top: 25px;
+}
+
+#filtres ul li
+{
+    border: 2px solid #F2F2F2;
+    border-radius: 60px;
+    padding-right: 13px;
+    margin-right: 20px;
+}
+
+#filtres ul
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#filtres li a
+{
+    text-decoration: none;
+}
+
+#filtres li a b
+{
+        padding-left: 10px;
+}
+
+/*effet des filtres TEST*/
+#filtres ul li a
+{
+    position: relative;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+#filtres ul li:hover
+{
+    background-color: #deebff;
+    transition: all .5s;
+}
+
+#filtres ul li:hover a
+{
+    color: #0065FC;
+}
+
+
+/*Action ICONE INFO*/
+.icone-info
+{
+    color: #0065FC;
+    position: relative;
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    border-radius: 100%;
+    border: 1px solid #F2F2F2;
+    margin-left: 5px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/*Action icone "info"*/
+.icone-info i
+{
+    display: flex;
+    margin-left: 7px;
+    margin-top: 3px;
+}
+
+
+
+/*HEBERGEMENT + POPULAIRES*/
+
+.main-heberg
+{
+    width: 62%;
+}
+
+/*mettre les sections heberg/popu côte à côte*/
+.main-popu
+{
+    width: 25%;
+}
+
+.main-popu h3
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*parametres des images des sections*/
+.images-heberg
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.images-popu
+{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img-pop
+{
+    width: 35%;
+}
+
+.carte
+{
+    height: 140px;
+    background-color: white;
+    padding: 5px;
+    line-height: 1.5;
+    border-radius: 10px;
+    /* width: 25%; */
+    margin: 15px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+.txt-supp
+{
+    text-decoration: none;
+    color: black;
+}
+
+.txt-supp p
+{
+    padding-top: 50px;
+}
+
+.texte-popu
+{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/*étoiles de notation*/
+.icones-star
+{
+    color: #0065FC;
+}
+
+.icones-star-grey
+{
+    color: #F2F2F2;
+}
+
+
+/*séparation popu-heberg*/
+#total-section
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*action sur le txt de la partie HEBERGEMENTS*/
+#heberg a 
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    line-height: 1.5;
+}
+
+#heberg a
+{
+    border-radius: 10px;
+    width: 25%;
+    margin: 15px;
+    box-shadow: 3px 3px 10px grey;
+}
+
+#heberg p
+{
+    background-color: white;
+    text-align: left;
+    margin: 0px;
+}
+
+
+/*Partie POPULAIRE*/
+#populaires a
+{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+#populaires p
+{
+    background-color: white;
+    text-align: left;
+    margin: 0px;
+}
+
+#populaires
+{
+    display: flex;
+    flex-direction: column;
+}
+
+#icone-graph
+{
+    margin-right: 15px;
+}
+
+/*ACTIVITES*/
+.main-activ
+{
+    background: none;
+}
+
+/*action sur les images en duo*/
+.img-act
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/*action sur les images solo*/
+.img-act-big
+{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+/* #acti a */
+.acti-paire a
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    /* padding: 5px; */
+    line-height: 1.5;
+}
+
+.acti-paire
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 23%;
+}
+
+.acti-paire-bloc
+{
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px grey;
+    background-color: white;
+    text-align: left;
+}
+
+/* #acti a */
+.acti-impaire a
+{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    line-height: 1.5;
+
+}
+
+/* #acti a */
+.acti-impaire
+{
+    border-radius: 10px;
+    width: 22%;
+    box-shadow: 3px 3px 10px grey;
+    background-color: white;
+    text-align: left;
+}
+
+.acti-impaire p
+{
+    padding-left: 15px;
+}
+
+.acti-paire p
+{
+    padding-left: 15px;
+}
+
+#acti
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
+/*PIED DE PAGE*/
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #F2F2F2;
+    padding-top: 25px;
+}
+
+footer h3
+{
+    font-size: 1.1em;
+}
+
+footer ul
+{
+    padding-inline-start: 0px;
+}
+
+footer a
+{
+    text-decoration: none;
+    color: black;
+}
+
+#a-propos
+{
+    width: 31%;
+    margin-left: 15px;
+}
+
+#nos-hebergements
+{
+    width: 28%;
+}
+
+#assist
+{
+    width: 35%;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media all and (min-width: 993px)
+{
+    
+    .nav-liens li:hover
+    {
+        padding-top: 49px;
+        border-top: #0065FC solid 2px;
+    }
+    
+    .nav-liens li:hover a
+    {    
+        color: #0065FC;
+    }
+
+    .nav-liens li
+{
+    padding: 50px 10px 0;
+    border-top: 1px solid white;
+}
+
+    #heberg
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .bouton-recherche-mob
+    {
+        display: none;
+    }
+
+
+}
+
+@media all and (min-width: 769px) and (max-width: 992px) /*de 768 a 992px*/
+{    
+    
+    body
+    {
+        width: 100%;
+    }
+
+    body h3
+    {
+        margin-left: 15px;
+    }
+
+    .recherche-titre
+    {
+        margin-left: 0;
+    }
+
+    footer h3
+    {
+        margin-left: 0;
+    }
+
+    .nav-liens li:hover
+    {
+        padding-top: 49px;
+        border-top: #0065FC solid 2px;
+    }
+    
+    .nav-liens li:hover a
+    {    
+        color: #0065FC;
+    }
+
+    .nav-liens li
+    {
+        padding: 50px 10px 0;
+        border-top: 1px solid white;
+    }
+
+    .main-heberg
+    {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-popu
+    {
+        width: 100%;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    .txt-supp p
+    {
+        padding-left: 15px;
+    }
+    
+
+    #populaires
+    {
+        margin-bottom: 15px;
+    }
+
+    #heberg
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #total-section
+    {
+        flex-direction: column-reverse;
+    }
+
+    .bouton-recherche-mob
+    {
+        display: none;
+    }
+
+    #filtres ul
+    {
+        margin-left: 20px;
+    }
+
+}
+
+
+@media all and (max-width: 768px) /*de 0 à 768px*/
+{
+
+    body
+    {
+        width: 100%;
+    }
+
+    body h3
+    {
+        margin-left: 15px;
+    }
+
+    body p
+    {
+        margin-left: 15px;
+    }
+
+    #bloc-page
+    {
+        margin: 0;
+    }
+
+
+    /*HEADER*/
+
+    /*nav-logo*/
+    nav
+    {
+        width: 100%;
+    }
+
+    .nav-liens
+    {
+        justify-content: center;
+        flex-direction: row;
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-liens li:hover
+    {
+        border-bottom: #0065FC solid 2px;
+        border-top: none;        
+    }
+
+    .nav-liens li:hover a
+    {
+        color: #0065FC;
+    }
+
+    .nav-liens li
+    {
+        padding: 50px 40px 10px;
+        border-bottom: 2px solid #F2F2F2;
+        width: 50%;
+        text-align: center;
+    }
+
+    #navigation
+    {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #logo
+    {
+        width: 100px;
+        height: auto;
+        text-align: center;
+        margin: auto;
+        display: flex;
+    }
+
+
+    /*BARRE DE RECHERCHE*/
+
+    .recherche-boite
+    {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .bouton-recherche
+    {
+        display: none;
+    }
+
+    #icone-recherche
+    {
+        width: 12%;
+    }
+
+    form input
+    {
+        width: 60%;
+    }
+
+    /*FILTRES*/
+
+    #filtres
+    {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    #filtres ul
+    {
+        margin-left: 20px;
+    }
+
+    #filtres ul li
+    {
+        margin-bottom: 15px;
+    }
+
+    .icones
+    {
+        padding: 0;
+    }
+
+
+
+    /*HEBERGEMENT/POPULAIRES*/
+
+    section
+    {
+        width: 100%;
+    }
+
+    .main-heberg
+    {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+        background-color: white;
+    }
+
+    .main-popu
+    {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+        padding: 0;
+    }
+
+    .carte
+    {
+        width: 90%;
+    }
+
+    #total-section
+    {
+        flex-direction: column-reverse;
+    }
+
+    #heberg
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #heberg a
+    {
+        /* width: 100%; */
+        width: 90%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    #populaires
+    {
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+
+    /*ACTIVITES*/
+
+    .main-activ
+    {
+        width: 100%;
+        padding: 0;
+    }
+
+    .acti-paire
+    {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .acti-paire-bloc
+    {
+        margin: 15px 0 15px 0;
+    }
+
+    .acti-impaire
+    {
+        width: 90%;
+        margin-top: 15px;
+    }
+
+    .acti-paire p
+    {
+        padding-left: 0;
+    }
+
+    .acti-impaire p
+    {
+        padding-left: 0;
+    }
+
+    #acti
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .img-act-big
+    {
+        height: 130px;
+    }
+
+    .img-act
+    {
+        height: 130px;
+    }
+
+
+    /*FOOTER*/
+    
+    footer
+    {
+        flex-direction: column;
+        margin-top: 15px;
+        padding: 0;
+        width: 100%;
+    }
+
+    footer h3
+    {
+        margin-left: 0;
+    }
+
+    #a-propos
+    {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    #nos-hebergements
+    {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+    #assist
+    {
+        width: 80%;
+        margin-left: 15px;
+    }
+
+}
